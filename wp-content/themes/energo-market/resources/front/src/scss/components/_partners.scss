@@ -1,0 +1,89 @@
+// --------------------------------------------------------------------------
+// partners
+// --------------------------------------------------------------------------
+
+.partners {
+    margin: 0 0 60px;
+    @include breakpoint(xl) {
+        margin: 0 0 120px;
+    }
+}
+
+.partners__title {
+    @extend .ui-title-38;
+    margin: 0 0 40px;
+    position: relative;
+    z-index: 2;
+}
+
+.partners__section {
+    position: relative;
+    z-index: 1;
+    padding: 40px 0 75px;
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -60px;
+        left: -80px;
+        right: -240px;
+        bottom: 0;
+        background: linear-gradient(135deg, #FCFCFD 0%, #F3F7FB 100%);
+        z-index: -1;
+    }
+
+   
+}
+
+
+.partners__grid {
+    margin: 0 -14px -28px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    & > li {
+        padding: 0 14px 28px;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    @include breakpoint(md) {
+        & > li {
+            flex: 0 0 33.333%;
+            max-width: 33.333%;
+        }
+    }
+    @include breakpoint(md) {
+        & > li {
+            flex: 0 0 25%;
+            max-width: 25%;
+        }
+    }
+}
+
+.partners__item {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    text-decoration: none;
+    background: #fff;
+    border: 20px solid #fff;
+    transition: 0.25s;
+    &:hover {
+        box-shadow: 0px 10px 14px rgba(0, 0, 0, 0.03);
+    }
+    &:before {
+        content: '';
+        float: left;
+        padding: 100% 0 0 0;
+    }
+    img {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        max-width: 100%;
+        max-height: 100%;
+    }
+}

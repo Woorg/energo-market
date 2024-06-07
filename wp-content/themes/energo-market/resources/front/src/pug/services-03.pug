@@ -1,0 +1,98 @@
+---
+title: Services 03 - Energo-market
+bodyClass: is-page-default
+---
+extends includes/_app
+
+
+block main
+
+    // Intro :: Start
+    .intro
+        .container-fluid
+
+            .intro__item
+
+                .row
+                    .col-md-6.push-md-6
+
+                        figure.intro__item-image
+                            img(src="images/img-intro-01.png", alt="")
+
+                    .col-md-6.pull-md-6
+
+                        .intro__item-desc
+                            h2.intro__item-title Владеете собственной #[br] генерацией?
+                            h3.intro__item-subtitle Продайте излишки выработанной электроэнергии по выгодной цене.
+                            h3.intro__item-subtitle Если Вы уже продаете электроэнергию – мы постараемся предложить цену выше.
+
+                            .intro__item-control
+
+                                a(href="#popup-request" data-fancybox).ui-btn.ui-btn--red
+                                    | Призыв к действию
+                                    +sprite('icon-arrow-btn')
+
+
+    // Intro :: End
+
+    // Benefits :: Start
+    .benefits
+        .container-fluid
+
+            h2.benefits__title Продажа электроэнергии #[br] позволит Вам:
+
+            .benefits__section
+                .row
+                    .col-md-6.col-xl-4
+                        .ui-card
+                            h4 Получить дополнительный доходот собственной генерации
+                            p Вся электроэнергия которая раньше бесплатно уходила в сеть будет куплена.
+                    .col-md-6.col-xl-4
+                        .ui-card
+                            h4 Максимально загрузить генерацию
+                            p Больше нет необходимости управлять производством электроэнергии, планировать выработку и потребление предприятия .
+                    .col-md-6.col-xl-4
+                        .ui-card
+                            h4 Снизить себестоимость производства электроэнергии
+                            p Генератор в любое время суток будет работать в оптимальном режиме.
+
+
+    // Benefits :: End
+
+    // Relevant :: Start
+    .relevant
+        .container-fluid
+
+            h2.relevant__title Для кого актуальна #[br] эта услуга:
+
+            .relevant__section
+
+                .row
+                    .col-md-6.col-xl-4
+                        .ui-card
+                            h4 Для тех у кого уже есть собственная генерация на предприятии
+                            p Начнем покупать у Вас излишки электроэнергииуже через месяца после подписания 2 договора.
+                    .col-md-6.col-xl-4
+                        .ui-card
+                            h4 Для тех, кто планирует строительство собственной генерации
+                            p Проведем независимую оценку возможногоэкономическогоэффекта от продажи излишков электроэнергии.
+                    .col-md-6.col-xl-4
+                        .ui-card
+                            h4 Для тех, кто строит генерацию для клиентов
+                            p Поможем Вам продать генерациюбольшей мощности скупив излишки электроэнергииу, клиента.
+
+
+                .ui-spacer
+
+                // Request :: Start
+                .ui-request
+                    .row
+                        .col-md
+                            h3 Оставить заявку на консультацию
+                        .col-md-auto
+                            a(href="#popup-request" data-fancybox).ui-btn.ui-btn--red
+                                | Отправить заявку
+                                +sprite('icon-arrow-btn')
+                // Request :: End
+
+    // Relevant :: End

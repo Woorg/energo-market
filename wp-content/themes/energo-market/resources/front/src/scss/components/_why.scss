@@ -1,0 +1,63 @@
+// --------------------------------------------------------------------------
+// Why
+// --------------------------------------------------------------------------
+
+.why {
+    margin: 0 0 60px;
+    @include breakpoint(xl) {
+        margin: 0 0 140px;
+    }
+}
+
+.why__title {
+    @extend .ui-title-38;
+    margin: 0 0 60px;
+    position: relative;
+    z-index: 2;
+}
+
+.why__section {
+    position: relative;
+    z-index: 2;
+    padding: 0 0 90px;
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -40px;
+        left: -240px;
+        right: -80px;
+        bottom: 0;
+        background: linear-gradient(135deg, #FCFCFD 0%, #F3F7FB 100%);
+        z-index: -1;
+    }
+
+    .row {
+		margin: 0 -25px -50px;
+		& > [class^="col"] {
+			padding: 0 25px 50px;
+		}
+    }
+    
+    .ui-card {
+        mark {
+            background: #F4F7F9;
+            width: 42px;
+            height: 42px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 25px;
+            line-height: 1;
+            font-weight: 600;
+            color: #DA2141;
+            margin: 0 0 20px;
+        }
+
+        h3 {
+            @extend .ui-title-19;
+            line-height: 1.4;
+            margin: 0 0 30px;
+        }
+    }
+}

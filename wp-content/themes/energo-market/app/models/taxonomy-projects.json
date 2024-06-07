@@ -1,0 +1,57 @@
+{
+  "active": true,
+  "type": "cat",
+  "name": "projects-categories",
+  "links": [
+    "post", "projects"
+  ],
+  "labels": {
+    "has_one": "Категория",
+    "has_many": "Категории",
+    "text_domain": "sage",
+    "overrides": {
+      "name": "Категории",
+      "singular_name": "Категория",
+      "search_items": "Search категории",
+      "popular_items": "Popular категории",
+      "all_items": "All категории",
+      "parent_item": "Parent категория",
+      "parent_item_colon": "Parent категория:",
+      "edit_item": "Редактировать категорию",
+      "view_item": "Смотреть категорию",
+      "update_item": "Обновить категорию",
+      "add_new_item": "Добавить новую категорию",
+      "new_item_name": "Новое имя категории",
+      "separate_items_with_commas": "Разделить категории запятыми ",
+      "add_or_remove_items": "Добавить или удалить категории",
+      "choose_from_most_used": "Выбрать из наиболее используемых категорий",
+      "not_found": "Категорий на найдено.",
+      "no_terms": "Нет категорий",
+      "items_list_navigation": "Список навигации категорий",
+      "items_list": "Список категорий"
+    }
+  },
+  "config": {
+    "public": true,
+    "publicly_queryable": true,
+    "show_ui": true,
+    "show_in_menu": true,
+    "show_in_nav_menus": true,
+    "show_in_rest": true,
+    "rest_base": "projects-categories",
+    "rest_controller_class": "WP_REST_Terms_Controller",
+    "show_tagcloud": true,
+    "show_in_quick_edit": true,
+    "show_admin_column": false,
+    "capabilities": {
+      "manage_terms": "manage_categories",
+      "edit_terms": "manage_categories",
+      "delete_terms": "manage_categories",
+      "assign_terms": "edit_posts"
+    },
+    "rewrite": {
+      "slug": "projects-categories",
+      "hierarchical": false
+    }
+  }
+}

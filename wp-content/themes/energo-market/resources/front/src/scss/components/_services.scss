@@ -1,0 +1,225 @@
+// --------------------------------------------------------------------------
+// Services
+// --------------------------------------------------------------------------
+
+.services {
+    margin: 0 0 60px;
+    @include breakpoint(xl) {
+        margin: 0 0 120px;
+    }
+}
+
+.services__topbar {
+    margin: 0 0 40px;
+    @include breakpoint(xl) {
+        display: flex;
+        margin: 0 0 80px;
+    }
+}
+
+.services__section {
+   position: relative;
+   z-index: 100;
+   &:after {
+       content: '';
+       display: block;
+       position: absolute;
+       top: 100px;
+       left: -80px;
+       right: -240px;
+       bottom: 140px;
+       background: linear-gradient(135deg, #FCFCFD 0%, #F3F7FB 100%);
+       z-index: -1;
+   }
+}
+
+.services__title {
+    @extend .ui-title-38;
+    margin: 0 0 20px;
+    @include breakpoint(xl) {
+        margin: 0 80px 0 0;
+    }
+}
+
+.services__control {
+    flex: 1;
+    @include breakpoint(md) {
+        display: flex;
+    }
+}
+
+.services__control-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 15px 0;
+    font: 700 15px/1.4 $fontBase;
+    letter-spacing: -0.423px;
+    color: rgba(0,0,0,0.5);
+    text-align: left;
+    transition: 0.25s;
+    margin: 0 20px 0 0;
+
+    br {
+        display: none;
+    }
+    &:last-of-type {
+        margin: 0;
+    }
+    
+    &:hover {
+        color: rgba(0,0,0,1);
+        .services__control-btn-icon  {
+            background: #F4F7F9;
+            border-color: #F4F7F9;
+            color:  #178AE4;
+        }
+    }
+    &.is-active {
+        border-color: #DA2141;
+        color: rgba(0,0,0,1);
+
+        .services__control-btn-icon  {
+            background: #F4F7F9;
+            border-color: #F4F7F9;
+            color:  #178AE4;
+        }
+    }
+
+    @include breakpoint(md) {
+        flex: 1 1 auto;
+        width: auto;
+        border-bottom: 2px solid transparent;
+        align-items: flex-start;
+        
+        br {
+            display: block;
+        }
+    }
+
+
+    @include breakpoint(xl) {
+        font-size: 18px;
+        padding: 0 20px 25px 20px;
+    }
+}
+
+.services__control-btn-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 25px 0 0;
+    border: 1px solid #F4F4F4;
+    width: 42px;
+    height: 42px;
+    flex: 0 0 42px;
+    transition: 0.25s;
+    svg {
+        display: block;
+    }
+}
+
+.services__control-btn-text {
+    flex: 1;
+}
+
+// -------
+
+
+.services__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    opacity: 0;
+    visibility: hidden;
+
+    &.is-active {
+        position: relative;
+        opacity: 1;
+        visibility: visible;
+        transition: 0.7s;
+    }
+}
+
+
+
+// -------
+
+
+.services__grid {
+    margin: 0 -10px 50px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    & > li {
+        padding: 0 10px 50px;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    @include breakpoint(md) {
+        margin: 0 -25px -50px;
+        & > li {
+            padding: 0 25px 50px;
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+    @include breakpoint(xl) {
+       
+        & > li {
+            
+            flex: 0 0 33.333%;
+            max-width: 33.333%;
+        }
+    }
+}
+
+
+.services__item {
+    display: block;
+    text-decoration: none;
+    background: #FFFFFF;
+    border: 1px solid #E3E7EB;
+    padding: 30px;
+    color: #000;
+    min-height: 100%;
+    transition: 0.25s;
+    &:hover {
+        box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+        text-decoration: none;
+        color: #000;
+    }
+    @include breakpoint(md) {
+        padding: 40px;
+    }
+}
+
+.services__item-title {
+    @extend .ui-title-19;
+    line-height: 1.5;
+    margin: 0 0 28px;
+}
+
+.services__item-mark {
+    background: none;
+    color: #033F6E;
+    display: block;
+
+    font-size: 15px;
+    line-height: 1.6;
+    font-weight: 500;
+    margin: 0 0 24px;
+}
+
+.services__item-text {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: 400;
+}

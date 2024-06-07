@@ -1,0 +1,37 @@
+// --------------------------------------------------------------------------
+// Topbar
+// --------------------------------------------------------------------------
+
+.topbar {
+    margin: 0 0 50px;
+    @include breakpoint(xl) {
+        margin: 0 0 100px;
+    }
+}
+
+.topbar__title {
+    @extend .ui-title-48;
+    margin: 0 0 40px;
+    @include breakpoint(xl) {
+        margin: 0 0 75px;
+    }
+}
+
+.topbar__image {
+    overflow: hidden;
+	margin: 0;
+	display: block;
+	img {
+		display: block;
+		width: 100%;
+	}
+    @include breakpoint(xl) {
+        // margin: 0 -240px 50px -80px;
+        position: relative;
+        left: 50%;
+        width: 100vw;
+        margin: 0 auto;
+        max-width: 1760px;
+        transform: translate(-50%,0);
+    }
+}

@@ -1,0 +1,72 @@
+{
+  "active": true,
+  "type": "cpt",
+  "name": "Projects",
+  "supports": [
+    "title",
+    "editor",
+    "comments",
+    "revisions",
+    "author",
+    "excerpt",
+    "page-attributes",
+    "thumbnail",
+    "custom-fields",
+    "post-formats"
+  ],
+  "labels": {
+    "has_one": "Проект",
+    "has_many": "Все проекты",
+    "text_domain": "sage",
+    "overrides": {
+      "name": "Все проекты",
+      "singular_name": "Проект",
+      "menu_name": "Все проекты",
+      "name_admin_bar": "Все проекты",
+      "add_new": "Добавить проект",
+      "add_new_item": "Добавить новый проект",
+      "edit_item": "Редактировать проект",
+      "new_item": "Новый проект",
+      "view_item": "Смотреть проект",
+      "view_items": "Смотреть проекты",
+      "search_items": "Искать проекты",
+      "not_found": "Ппроект не найден",
+      "not_found_in_trash": "Проект не найдено in Trash.",
+      "parent_item-colon": "Parent проект:",
+      "all_items": "Все проекты",
+      "archives": "Проекты",
+      "attributes": "Проект еttributes",
+      "insert_into_item": "Insert into проект",
+      "uploaded_to_this_item": "Uploaded to this проект",
+      "featured_image": "Featured Image",
+      "set_featured_image": "Set featured image",
+      "remove_featured_image": "Remove featured image",
+      "use_featured_image": "Use featured image",
+      "filter_items_list": "Filter проект list",
+      "items_list_navigation": "Проекты list navigation",
+      "items_list": "Все проекты"
+    }
+  },
+  "config": {
+    "public": true,
+    "publicly_queryable": true,
+    "show_ui": true,
+    "show_in_menu": true,
+    "show_in_rest": true,
+    "query_var": true,
+    "has_archive": true,
+    "hierarchical": true,
+    "menu_position": null,
+    "can_export": true,
+    "capability_type": "post",
+    "taxonomies": [
+      "projects-categories"
+    ],
+    "rewrite": {
+      "slug": "projects",
+      "with_front": true,
+      "feeds": true,
+      "pages": true
+    }
+  }
+}

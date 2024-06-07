@@ -1,0 +1,103 @@
+// --------------------------------------------------------------------------
+// Sprite Auto Generated
+// --------------------------------------------------------------------------
+
+@import '../sprites/_spritesSvg'; 
+
+// --------------------------------------------------------------------------
+// Config
+// --------------------------------------------------------------------------
+
+// Fonts
+$fontBase: 'Manrope', Arial, Helvetica, sans-serif;
+
+
+// Grid
+$xs: 420px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$hd: 1680px;
+
+
+// --------------------------------------------------------------------------
+// Base
+// --------------------------------------------------------------------------
+
+@import 'base/_mixins';
+@import 'base/_extends';
+
+@import 'base/_normalize';
+@import 'base/_typography';
+@import 'base/_icons';
+@import 'base/_fonts';
+
+@import 'base/_ui';
+@import 'base/_wysiwyg';
+
+
+// --------------------------------------------------------------------------
+// Plugins
+// --------------------------------------------------------------------------
+
+@import 'plugins/_swiper';
+@import 'plugins/_fancybox';
+
+// --------------------------------------------------------------------------
+// Components
+// --------------------------------------------------------------------------
+
+@import 'components/_popups';
+
+@import 'components/_intro';
+@import 'components/_services';
+@import 'components/_reviews';
+@import 'components/_interests';
+@import 'components/_advices';
+@import 'components/_geo';
+
+@import 'components/_article';
+
+@import 'components/_buy';
+@import 'components/_works';
+@import 'components/_save';
+@import 'components/_need';
+@import 'components/_cost';
+
+@import 'components/_for';
+@import 'components/_offer';
+
+@import 'components/_benefits';
+@import 'components/_relevant';
+
+@import 'components/_activity';
+@import 'components/_profit';
+@import 'components/_create';
+@import 'components/_why';
+@import 'components/_partners';
+@import 'components/_request';
+
+
+@import 'components/_topbar';
+@import 'components/_about';
+@import 'components/_support';
+@import 'components/_history';
+@import 'components/_contacts';
+
+// --------------------------------------------------------------------------
+// Layout
+// --------------------------------------------------------------------------
+
+@import 'layout/_grid';
+@import 'layout/_layout';
+@import 'layout/_header';
+@import 'layout/_main';
+@import 'layout/_footer';
+
+// --------------------------------------------------------------------------
+// States
+// --------------------------------------------------------------------------
+
+@import 'states/_states';
+

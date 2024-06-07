@@ -1,0 +1,142 @@
+// --------------------------------------------------------------------------
+// States
+// --------------------------------------------------------------------------
+
+.text-center {
+	text-align: center;
+}
+
+.row-gutter-120 {
+	margin: 0 -60px;
+	& > [class^="col-"] {
+		padding: 0 60px;
+	}
+}
+
+.row-gutter-90 {
+	margin: 0 -45px;
+	& > [class^="col-"] {
+		padding: 0 45px;
+	}
+}
+
+.col-md-33 {
+	@include breakpoint(md) {
+		flex: 0 0 33.333%;
+		max-width: 33.333%;
+	}
+}
+
+// -----
+
+.is-hidden {
+	display: none;
+}
+
+.is-sm-visible {
+	@include breakpointMax(sm) {
+		display: none;
+	}
+}
+
+.is-md-visible {
+	@include breakpointMax(md) {
+		display: none;
+	}
+}
+
+.is-lg-visible {
+	@include breakpointMax(lg) {
+		display: none;
+	}
+}
+
+.is-xl-visible {
+	@include breakpointMax(xl) {
+		display: none;
+	}
+}
+
+// -----
+
+.is-md-hidden {
+	@include breakpoint(md) {
+		display: none;
+	}
+}
+
+.is-lg-hidden {
+	@include breakpoint(lg) {
+		display: none;
+	}
+}
+
+.is-xl-hidden {
+	@include breakpoint(xl) {
+		display: none;
+	}
+}
+
+
+.row-offset-10 {
+	margin: 0 -5px;
+	& > [class^="col-"] {
+		padding: 0 5px;
+	}
+}
+
+
+.row-offset-50 {
+	margin: 0 -25px;
+	& > [class^="col-"] {
+		padding: 0 25px;
+	}
+}
+
+.row-offset-56 {
+	margin: 0 -28px;
+	& > [class^="col-"] {
+		padding: 0 28px;
+	}
+}
+
+
+
+.row-offset-lg-56 {
+	@include breakpoint(lg) {
+
+		margin: 0 -28px;
+		& > [class^="col-"] {
+			padding: 0 28px;
+		}
+
+	}
+}
+
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,102 @@
+// --------------------------------------------------------------------------
+// Geo
+// --------------------------------------------------------------------------
+
+.geo {
+    position: relative;
+    max-width: 1760px;
+    margin: 0 auto -80px;
+    background: #F2F2F2;
+    height: 880px;
+    padding: 110px 0;
+    overflow: hidden;
+   
+}
+
+.geo__map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: -25%;
+    z-index: 1;
+}
+
+
+// ---------
+
+.geo__desc {
+    background: #1F82C4;
+    color: #fff;
+    max-width: 444px;
+    padding: 30px 30px 60px;
+    position: relative;
+    z-index: 2;
+    @include breakpoint(md) {
+        padding: 40px 40px 60px;
+    }
+    @include breakpoint(hd) {
+        left: -80px;
+    }
+}
+
+.geo__title {
+    @extend .ui-title-38;
+    margin: 0 0 40px;
+}
+
+.geo__info {
+    
+    margin: 0 -10px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    // flex-wrap: wrap;
+    white-space: nowrap;
+    
+
+    font-size: 28px;
+    line-height: 1.25;
+    font-weight: 700;
+    letter-spacing: -0.54902px;
+    
+    color: #9ED8FF;
+
+    small {
+        display: block;
+        font-size: 15px;
+        line-height: 1.72;
+        font-weight: 500;
+        letter-spacing: 0;
+        color: #fff;
+    }
+    & > li {
+        padding: 0 10px;
+    }
+
+    @include breakpoint(xl) {
+        font-size: 48px;
+        letter-spacing: -0.941176px;
+        margin: 0 -25px;
+        & > li {
+            padding: 0 25px;
+        }
+        small {
+            font-size: 18px;
+        }
+    }
+
+    @include breakpointMax(sm) {
+        flex-wrap: wrap;
+        margin: 0 -10px -10px;
+        & > li {
+            padding: 0 10px 10px;
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        small {
+            display: inline;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+// --------------------------------------------------------------------------
+// Benefits
+// --------------------------------------------------------------------------
+
+.benefits {
+    margin: 0 0 60px;
+    @include breakpoint(xl) {
+        margin: 0 0 120px;
+    }
+}
+
+.benefits__title {
+    @extend .ui-title-38;
+    margin: 0 0 40px;
+    position: relative;
+    z-index: 2;
+}
+
+.benefits__section {
+    position: relative;
+    z-index: 1;
+    padding: 40px 0 80px;
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -70px;
+        left: -80px;
+        right: -240px;
+        bottom: 0;
+        background: linear-gradient(135deg, #FCFCFD 0%, #F3F7FB 100%);
+        z-index: -1;
+    }
+
+    .row {
+		margin: 0 -25px -50px;
+		& > [class^="col"] {
+			padding: 0 25px 50px;
+		}
+	}
+
+    .ui-card {
+        h4 {
+            margin: 0 0 30px;
+        }
+    }
+   
+}

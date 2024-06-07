@@ -1,0 +1,89 @@
+// --------------------------------------------------------------------------
+// Save
+// --------------------------------------------------------------------------
+
+.save {
+    margin: 0 0 60px;
+    @include breakpoint(xl) {
+        margin: 0 0 140px;
+    }
+}
+
+.save__title {
+    @extend .ui-title-38;
+    margin: 0 0 40px;
+    position: relative;
+    z-index: 2;
+}
+
+.save__section {
+    position: relative;
+    z-index: 1;
+    padding: 30px 30px 60px 30px;
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -60px;
+        left: 0;
+        right: 0;
+        bottom: 10px;
+        background: linear-gradient(135deg, #FCFCFD 0%, #F3F7FB 100%);
+        z-index: -1;
+    }
+    .row {
+        margin: 0 -25px;
+        & > [class^="col"] {
+            padding: 0 25px;
+        }
+    }
+
+    @include breakpoint(md) {
+        padding: 40px 70px 60px 70px;
+    }
+    @include breakpoint(xl) {
+        margin: 0 0 0 110px;
+        .row {
+            margin: 0 -45px;
+            & > [class^="col-"] {
+                padding: 0 45px;
+            }
+        }
+    }
+    @include breakpoint(hd) {
+        padding: 40px 144px 126px 144px;
+    }
+}
+
+.save__form {
+    .ui-label {
+        margin: 0 0 10px;
+    }
+    .ui-field {
+        margin: 0 0 20px;
+    }
+    .ui-result {
+        padding: 10px 0;
+        margin: 30px 0 20px;
+    }
+    .ui-action {
+        padding: 30px 0 0;
+    }
+
+    // .ui-input {
+    //     background: #fff;
+    // }
+
+    .ui-btn {
+        width: 100%;
+    }
+
+    @include breakpointMax(md) {
+        .ui-result {
+            margin: 0 0 20px;
+        }
+        .ui-action {
+            padding: 0;
+        }
+    }
+}

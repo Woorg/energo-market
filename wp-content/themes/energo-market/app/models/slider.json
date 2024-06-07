@@ -1,0 +1,72 @@
+{
+  "active": true,
+  "type": "cpt",
+  "name": "Slider",
+  "supports": [
+    "title",
+    "editor",
+    "comments",
+    "revisions",
+    "author",
+    "excerpt",
+    "page-attributes",
+    "thumbnail",
+    "custom-fields",
+    "post-formats"
+  ],
+  "labels": {
+    "has_one": "Слайд",
+    "has_many": "Слайдер",
+    "text_domain": "sage",
+    "overrides": {
+      "name": "Слайдер",
+      "singular_name": "Слайд",
+      "menu_name": "Слайдер",
+      "name_admin_bar": "Слайдер",
+      "add_new": "Добавить слайд",
+      "add_new_item": "Добавить новый слайд",
+      "edit_item": "Редактировать слайд",
+      "new_item": "Новый слайд",
+      "view_item": "Смотреть слайд",
+      "view_items": "Смотреть слайдер",
+      "search_items": "Искать слайд",
+      "not_found": "Слайд не найден",
+      "not_found_in_trash": "Слайд не найден in Trash.",
+      "parent_item-colon": "Parent Слайд:",
+      "all_items": "Все слайды",
+      "archives": "Слайды",
+      "attributes": "Слайд Attributes",
+      "insert_into_item": "Insert into Слайд",
+      "uploaded_to_this_item": "Uploaded to this Слайд",
+      "featured_image": "Featured Image",
+      "set_featured_image": "Set featured image",
+      "remove_featured_image": "Remove featured image",
+      "use_featured_image": "Use featured image",
+      "filter_items_list": "Filter Слайдов list",
+      "items_list_navigation": "Слайд list navigation",
+      "items_list": "Список слайдов"
+    }
+  },
+  "config": {
+    "public": false,
+    "publicly_queryable": false,
+    "show_ui": true,
+    "show_in_menu": true,
+    "show_in_rest": true,
+    "query_var": true,
+    "has_archive": false,
+    "hierarchical": true,
+    "menu_position": null,
+    "can_export": true,
+    "capability_type": "post",
+    "taxonomies": [
+      ""
+    ],
+    "rewrite": {
+      "slug": "slides",
+      "with_front": false,
+      "feeds": true,
+      "pages": true
+    }
+  }
+}

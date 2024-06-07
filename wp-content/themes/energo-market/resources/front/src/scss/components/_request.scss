@@ -1,0 +1,104 @@
+// --------------------------------------------------------------------------
+// Request
+// --------------------------------------------------------------------------
+
+.request {
+    margin: 0 0 60px;
+    @include breakpoint(xl) {
+        margin: 0 0 140px;
+    }
+}
+
+.request__title {
+    @extend .ui-title-38;
+    margin: 0 0 40px;
+    position: relative;
+    z-index: 2;
+}
+
+.request__section {
+    position: relative;
+    z-index: 1;
+    padding: 30px 30px 60px 30px;
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -70px;
+        left: 0;
+        right: 0;
+        bottom: 10px;
+        background: linear-gradient(135deg, #FCFCFD 0%, #F3F7FB 100%);
+        z-index: -1;
+    }
+    .row {
+        margin: 0 -25px;
+        & > [class^="col"] {
+            padding: 0 25px;
+        }
+    }
+
+    @include breakpoint(md) {
+        padding: 40px 70px 60px 70px;
+    }
+    @include breakpoint(xl) {
+        margin: 0 0 0 110px;
+        .row {
+            margin: 0 -45px;
+            & > [class^="col-"] {
+                padding: 0 45px;
+            }
+        }
+    }
+    @include breakpoint(hd) {
+        padding: 30px 144px 90px 144px;
+    }
+}
+
+.request__text {
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: 400;
+    max-width: 680px;
+    margin: 0 0 65px;
+    p {
+        margin: 0 0 40px;
+        &:last-child {
+            margin: 0;
+        }
+    }
+
+    a[href^="tel:"] {
+        display: inline-block;
+        vertical-align: top;
+        text-decoration: none;
+        color: #000;
+        font-size: 19px;
+        line-height: 1.47;
+        font-weight: 600;
+        margin: 20px 0 0;
+    }
+}
+
+.request__form {
+
+    
+    .ui-label {
+        margin: 0 0 10px;
+    }
+    .ui-field {
+        margin: 0 0 20px;
+    }
+    .ui-action {
+        padding: 30px 0 0;
+    }
+
+    .ui-textarea {
+        height: 150px;
+        min-height: 150px;
+    }
+
+    // .ui-input {
+    //     background: #fff;
+    // }
+}

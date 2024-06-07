@@ -1,0 +1,146 @@
+// --------------------------------------------------------------------------
+// Standart
+// --------------------------------------------------------------------------
+
+.ui-wysiwyg {
+
+	font-size: 15px;
+	line-height: 1.72;
+	font-weight: 400;
+
+	section {
+		position: relative;
+		z-index: 1;
+		// padding: 70px 0;
+		// margin: 70px 0;
+		padding: 40px 0;
+		margin: 40px 0;
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: -240px;
+			right: -80px;
+			bottom: 0;
+			background: linear-gradient(135deg, #FCFCFD 0%, #F3F7FB 100%);
+			z-index: -1;
+		}
+		&:nth-of-type(even) {
+			&:after {
+				left: -80px;
+				right: -240px;
+			}
+		}
+
+		@include breakpoint(xl) {
+			padding: 80px 0;
+			margin: 80px 0;
+		}
+	}
+
+
+	.row {
+		margin: 0 -25px -50px;
+		& > [class^="col"] {
+			padding: 0 25px 50px;
+		}
+	}
+
+
+	h1 {
+		@extend .ui-title-48;
+	}
+	
+	h2 {
+		@extend .ui-title-38;
+	}
+
+	h3 {
+		@extend .ui-title-25;
+	}
+
+	h4 {
+		@extend .ui-title-19;
+	}
+
+	h5 {
+		@extend .ui-title-18;
+	}
+
+	h6 {
+		@extend .ui-title-14;
+	}
+
+	
+	figure {
+		@extend .ui-image;
+		&.ui-image--outside {
+			@extend .ui-image--outside;
+		}
+	}
+
+	
+
+	ul {
+		@extend .ui-ul;
+	}
+
+	ol {
+		@extend .ui-ol;
+	}
+
+	blockquote {
+	    margin: 0 0 40px;
+		padding: 0;
+		display: block;
+		position: relative;
+		z-index: 1;
+		padding: 20px 0 0 16px;
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -1;
+			width: 72px;
+			height: 54px;
+			background: url(../images/icons/icon-quotes.svg) 0 0 no-repeat;
+			background-size: contain;
+		}
+		
+	}
+
+	hr {
+	    border: none;
+	    border-top: 1px solid #E0E0E0;
+	    margin: 60px 0;
+	    clear: both;
+	}
+
+
+	table {
+		@extend .ui-table;
+	}
+
+
+	a {
+	    text-decoration: underline;
+		color: #DA2141;
+		transition: color 0.25s;
+	    &:hover {
+	        color: darken(#DA2141,10%);
+	        text-decoration: underline;
+		}
+	}
+
+
+	ul, ol, p, table, blockquote {
+		margin: 0 0 50px;
+	}
+
+	@include breakpoint(xl) {
+		font-size: 18px;
+	}
+}

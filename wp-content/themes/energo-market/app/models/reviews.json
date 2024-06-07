@@ -1,0 +1,72 @@
+{
+  "active": true,
+  "type": "cpt",
+  "name": "Reviews",
+  "supports": [
+    "title",
+    "editor",
+    "comments",
+    "revisions",
+    "author",
+    "excerpt",
+    "page-attributes",
+    "thumbnail",
+    "custom-fields",
+    "post-formats"
+  ],
+  "labels": {
+    "has_one": "Отзыв",
+    "has_many": "Отзывы",
+    "text_domain": "sage",
+    "overrides": {
+      "name": "Отзывы",
+      "singular_name": "Отзыв",
+      "menu_name": "Отзывы",
+      "name_admin_bar": "Отзывы",
+      "add_new": "Добавить Отзыв",
+      "add_new_item": "Добавить новый отзыв",
+      "edit_item": "Редактировать ттзыв",
+      "new_item": "Новый отзыв",
+      "view_item": "Смотреть отзыв",
+      "view_items": "Смотреть Отзывы",
+      "search_items": "Искать Отзывы",
+      "not_found": "Отзыв не найден",
+      "not_found_in_trash": "Отзыв не найдено in Trash.",
+      "parent_item-colon": "Parent Отзыв:",
+      "all_items": "Все Отзывы",
+      "archives": "Отзывы",
+      "attributes": "Отзыв Attributes",
+      "insert_into_item": "Insert into Отзыв",
+      "uploaded_to_this_item": "Uploaded to this Отзыв",
+      "featured_image": "Featured Image",
+      "set_featured_image": "Set featured image",
+      "remove_featured_image": "Remove featured image",
+      "use_featured_image": "Use featured image",
+      "filter_items_list": "Filter Отзыв list",
+      "items_list_navigation": "Отзыв list navigation",
+      "items_list": "Список Отзывов"
+    }
+  },
+  "config": {
+    "public": true,
+    "publicly_queryable": true,
+    "show_ui": true,
+    "show_in_menu": true,
+    "show_in_rest": true,
+    "query_var": true,
+    "has_archive": true,
+    "hierarchical": true,
+    "menu_position": null,
+    "can_export": true,
+    "capability_type": "post",
+    "taxonomies": [
+      ""
+    ],
+    "rewrite": {
+      "slug": "reviews",
+      "with_front": true,
+      "feeds": true,
+      "pages": true
+    }
+  }
+}

@@ -1,0 +1,85 @@
+// --------------------------------------------------------------------------
+// Offer
+// --------------------------------------------------------------------------
+
+.offer {
+    margin: 0 0 60px;
+    @include breakpoint(xl) {
+        margin: 0 0 120px;
+    }
+}
+
+.offer__title {
+    @extend .ui-title-38;
+    margin: 0 0 40px;
+    position: relative;
+    z-index: 2;
+}
+
+.offer__section {
+    position: relative;
+    z-index: 1;
+    padding: 20px 0 105px;
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -70px;
+        left: -240px;
+        right: -80px;
+        bottom: 0;
+        background: linear-gradient(135deg, #FCFCFD 0%, #F3F7FB 100%);
+        z-index: -1;
+    }
+
+    h2 {
+        @extend .ui-title-38;
+        margin: 0 0 50px;
+    }
+
+    h3 {
+        @extend .ui-title-25;
+        margin: 0 0 60px;
+        max-width: 1040px;
+    }
+
+    h4 {
+        @extend .ui-title-18;
+        margin: 0 0 40px;
+    }
+
+    ul {
+        @extend .ui-ul;
+        margin: 0 0 60px;
+        & > li {
+            margin: 0 0 10px;
+        }
+    }
+    ol {
+        @extend .ui-ol;
+        margin: 0 0 60px;
+        & > li {
+            margin: 0 0 10px;
+        }
+    }
+
+    p {
+        margin: 0 0 30px;
+        & + h2 {
+            padding: 70px 0 0;
+        }
+        & + h3 {
+            padding: 55px 0 0;
+        }
+        & + h4 {
+            padding: 30px 0 0;
+        }
+    }
+
+    .ui-request {
+        h3 {
+            margin: 0;
+        }
+    }
+   
+}

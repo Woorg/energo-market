@@ -1,0 +1,194 @@
+// --------------------------------------------------------------------------
+// Interests
+// --------------------------------------------------------------------------
+
+.interests {
+    margin: 0 0 60px;
+    @include breakpoint(xl) {
+        margin: 0 0 125px;
+    }
+}
+
+.interests_single {
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -40px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        background: linear-gradient(135deg, #FCFCFD 0%, #F3F7FB 100%);
+    }
+    .interests__section {
+        &:after {
+            display: none;
+        }
+    }
+}
+
+
+.interests__title {
+    position: relative;
+    z-index: 2;
+    @extend .ui-title-38;
+    margin: 0 0 20px;
+}
+
+
+.interests__section {
+    position: relative;
+    z-index: 1;
+    padding: 40px 0 60px;
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -50px;
+        left: -240px;
+        right: -80px;
+        bottom: 0;
+        background: linear-gradient(135deg, #FCFCFD 0%, #F3F7FB 100%);
+        z-index: -1;
+    }
+    @include breakpoint(xl) {
+        padding: 88px 0 120px;
+    }
+}
+
+// ---------
+
+
+
+.interests__grid {
+    margin: 0 -10px -50px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    & > li {
+        padding: 0 10px 50px;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    @include breakpoint(md) {
+        margin: 0 -25px -50px;
+        & > li {
+            padding: 0 25px 50px;
+            flex: 0 0 50%;
+            max-width: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    @include breakpoint(xl) {
+        & > li {
+            flex: 0 0 33.333%;
+            max-width: 33.333%;
+        }
+    }
+}
+
+
+.interests__caption {
+    margin: 0 -25px;
+    padding: 0 0 30px;
+    list-style: none;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    display: flex;
+    & > li {
+        padding: 0 25px;
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+    }
+
+    @include breakpointMax(xl) {
+        display: none;
+    }
+
+}
+
+.interests__group {
+    background: #FFFFFF;
+    border: 1px solid #E3E7EB;
+    min-height: 100%;
+    display: flex;
+}
+
+
+.interests__item {
+    padding: 30px 30px 80px;
+    position: relative;
+    @include breakpoint(md) {
+        min-height: 535px;
+        padding: 40px 40px 80px;
+    }
+}
+
+.interests__item-image {
+    height: 100px;
+    margin: 0 0 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+        display: block;
+        max-height: 100%;
+        max-width: 100%;
+    }
+}
+
+.interests__item-title {
+    display: block;
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 600;
+    margin: 0 0 20px;
+}
+
+
+.interests__item-file {
+    display: block;
+    padding: 0 0 10px;
+    margin: 0 0 18px;
+    border-bottom: 1px solid #D8D8D8;
+    display: flex;
+    align-items: center;
+
+    font-size: 16px;
+    line-height: 1.75;
+    font-weight: 600;
+}
+
+.interests__item-file-name {
+    display: block;
+    flex: 1;
+    color: #033F6E;
+    text-decoration: none;
+    &:hover {
+        color: #033F6E;
+        text-decoration: none;
+    }
+}
+
+.interests__item-file-view, .interests__item-file-download {
+    display: block;
+    margin: 0 0 0 20px;
+    text-decoration: none;
+    color: #1F82C4;
+    &:hover {
+        text-decoration: none;
+        color: #1F82C4;
+    }
+}
+
+
+.interests__item-text {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.7;
+    font-weight: 400;
+}

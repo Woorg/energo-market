@@ -1,0 +1,99 @@
+// --------------------------------------------------------------------------
+// Extends
+// --------------------------------------------------------------------------
+
+.ui-title-48 {
+    display: block;
+    font-size: 28px;
+    line-height: 1.25;
+    font-weight: 700;
+    letter-spacing: -0.54902px;
+    
+    margin: 0 0 50px;
+    
+    @include breakpoint(xl) {
+        font-size: 48px;
+        letter-spacing: -0.941176px;
+    }
+}
+
+
+.ui-title-38 {
+    display: block;
+    font-size: 24px;
+    line-height: 1.25;
+    font-weight: 700;
+    letter-spacing: -0.745098px;
+    margin: 0 0 40px;
+    @include breakpoint(xl) {
+        font-size: 38px;
+    }
+}
+
+
+
+.ui-title-25 {
+    display: block;
+    font-size: 20px;
+    line-height: 1.25;
+    font-weight: 600;
+    margin: 0 0 40px;
+    @include breakpoint(xl) {
+        font-size: 25px;
+    }
+}
+
+.ui-title-19 {
+    display: block;
+    font-size: 19px;
+    line-height: 1.25;
+    font-weight: 600;
+    margin: 0 0 40px;
+}
+
+.ui-title-18 {
+    display: block;
+    font-size: 18px;
+    line-height: 1.25;
+    font-weight: 700;
+    margin: 0 0 40px;
+}
+
+.ui-title-14 {
+    display: block;
+    font-size: 14px;
+    line-height: 1.25;
+    font-weight: 400;
+    margin: 0 0 40px;
+}
+
+
+
+// -------
+
+
+.ui-text-20 {
+    display: block;
+    margin: 0 0 20px;
+    font-size: 18px;
+    line-height: 1.55;
+    font-weight: 500;
+  
+    @include breakpoint(xl) {
+        font-size: 20px;
+    }
+}
+
+
+
+.ui-text-18 {
+    display: block;
+    margin: 0 0 20px;
+    font-size: 15px;
+    line-height: 1.55;
+    font-weight: 500;
+  
+    @include breakpoint(xl) {
+        font-size: 18px;
+    }
+}

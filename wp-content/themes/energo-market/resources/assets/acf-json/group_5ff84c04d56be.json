@@ -1,0 +1,41 @@
+{
+    "key": "group_5ff84c04d56be",
+    "title": "Weather",
+    "fields": [
+        {
+            "key": "field_5ff84de9e52b9",
+            "label": "Weather",
+            "name": "resort_weather",
+            "type": "weather",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "api": "51552e102b107bc51ae04dd2c9d2b881",
+            "units": "imperial",
+            "cache_lifetime": 86400
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "ski-resorts"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1610445596
+}

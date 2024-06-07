@@ -1,0 +1,72 @@
+{
+  "active": true,
+  "type": "cpt",
+  "name": "Services",
+  "supports": [
+    "title",
+    "editor",
+    "comments",
+    "revisions",
+    "author",
+    "excerpt",
+    "page-attributes",
+    "thumbnail",
+    "custom-fields",
+    "post-formats"
+  ],
+  "labels": {
+    "has_one": "Услуга",
+    "has_many": "Услуги",
+    "text_domain": "sage",
+    "overrides": {
+      "name": "Услуги",
+      "singular_name": "Услуга",
+      "menu_name": "Услуги",
+      "name_admin_bar": "Услуги",
+      "add_new": "Добавить услугу",
+      "add_new_item": "Добавить новую услугу",
+      "edit_item": "Редактировать услугу",
+      "new_item": "Новая услуга",
+      "view_item": "Смотреть услугу",
+      "view_items": "Смотреть услуги",
+      "search_items": "Искать услуги",
+      "not_found": "Услуга не найден",
+      "not_found_in_trash": "Услуги не найдено in Trash.",
+      "parent_item-colon": "Parent услуга:",
+      "all_items": "Все услуги",
+      "archives": "Услуги",
+      "attributes": "Услуга Attributes",
+      "insert_into_item": "Insert into услугу",
+      "uploaded_to_this_item": "Uploaded to this услугу",
+      "featured_image": "Featured Image",
+      "set_featured_image": "Set featured image",
+      "remove_featured_image": "Remove featured image",
+      "use_featured_image": "Use featured image",
+      "filter_items_list": "Filter услуги list",
+      "items_list_navigation": "Услуги list navigation",
+      "items_list": "Список услуг"
+    }
+  },
+  "config": {
+    "public": true,
+    "publicly_queryable": true,
+    "show_ui": true,
+    "show_in_menu": true,
+    "show_in_rest": true,
+    "query_var": true,
+    "has_archive": true,
+    "hierarchical": true,
+    "menu_position": null,
+    "can_export": true,
+    "capability_type": "post",
+    "taxonomies": [
+      "services-categories"
+    ],
+    "rewrite": {
+      "slug": "services",
+      "with_front": true,
+      "feeds": true,
+      "pages": true
+    }
+  }
+}

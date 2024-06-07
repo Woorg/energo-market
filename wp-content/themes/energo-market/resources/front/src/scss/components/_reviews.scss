@@ -1,0 +1,229 @@
+// --------------------------------------------------------------------------
+// Reviews
+// --------------------------------------------------------------------------
+
+.reviews {
+    margin: 0 0 80px;
+    @include breakpoint(xl) {
+        margin: 0 0 160px;
+    }
+}
+
+
+// ------
+
+.reviews__title {
+    position: relative;
+    z-index: 2;
+    @extend .ui-title-38;
+    margin: 0 0 20px;
+}
+
+
+.reviews__section {
+    position: relative;
+    z-index: 1;
+    padding: 30px;
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -40px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(135deg, #FCFCFD 0%, #F3F7FB 100%);
+        z-index: -1;
+    }
+
+    @include breakpoint(md) {
+        padding: 40px;
+    }
+
+    @include breakpoint(xl) {
+        padding: 60px 100px 90px;
+        margin: 0 0 0 110px;
+    }
+
+}
+
+
+// ------
+
+
+.reviews__slide {
+    @include breakpoint(md) {
+        display: flex;
+    }
+}
+
+.reviews__slide-sidebar {
+    margin: 0;
+    @include breakpoint(md) {
+        margin: 0 54px 0 0;
+        flex: 0 0 250px;
+        max-width: 33.333%;
+    }
+
+}
+
+.reviews__slide-content {
+    flex: 1;
+    padding: 40px 0 0;
+}
+
+
+// -------
+
+.reviews__slide-image {
+    background: #fff;
+    margin: 0 0 15px;
+    position: relative;
+    overflow: hidden;
+    padding: 30px;
+    max-width: 250px;
+    &:before {
+        content: '';
+        float: left;
+        padding: 100% 0 0 0;
+    }
+    img {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        max-height: 100%;
+        max-width: 100%;
+        // position: absolute;
+        // top: 0;
+        // left: 0;
+        // width: 100%;
+        // height: 100%;
+        // object-fit: contain;
+    }
+}
+
+.reviews__slide-caption {
+    font-size: 15px;
+    line-height: 1.56;
+    font-weight: 600;
+    margin: 0;
+    small {
+        display: block;
+    }
+    @include breakpoint(xl) {
+        font-size: 18px;
+    }
+}
+
+.reviews__slide-blockquote {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    line-height: 1.72;
+    font-weight: 400;
+    display: block;
+    position: relative;
+    z-index: 1;
+    padding: 20px 0 0 0;
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 72px;
+        height: 54px;
+        background: url(../images/icons/icon-quotes.svg) 0 0 no-repeat;
+        background-size: contain;
+    }
+    @include breakpoint(md) {
+        padding: 20px 0 0 16px;
+    }
+    @include breakpoint(xl) {
+        font-size: 18px;
+    }
+}
+
+// -------
+
+
+.reviews__thumb {
+    position: relative;
+    cursor: pointer;
+    background: #fff;
+    padding: 15px 20px;
+    height: 90px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 500;
+
+    transition: 0.25s;
+    img {
+        display: block;
+        max-height: 100%;
+        max-width: 100%;
+        flex: 0 0 auto;
+    }
+    &:hover {
+        box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    }
+}
+
+.reviews__thumb-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    color: #1F82C4;
+    text-decoration: none;
+
+    svg {
+        margin: 0 0 0 8px;
+    }
+}
+
+
+.reviews_single {
+    // padding-top: 30px;
+    // @include breakpoint(xl) {
+    //     padding-top: 60px;
+    // }
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -40px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        background: linear-gradient(135deg, #FCFCFD 0%, #F3F7FB 100%);
+    }
+    .reviews__section {
+        background: #FFF;
+        &:after {
+            display: none;
+        }
+    }
+    .reviews__slide {
+        margin-bottom: 40px;
+        @include breakpoint(md) {
+            margin-bottom: 80px;
+        }
+    }
+}

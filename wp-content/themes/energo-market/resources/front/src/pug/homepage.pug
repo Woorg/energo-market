@@ -1,0 +1,574 @@
+---
+title: Homepage - Energo-market
+bodyClass: is-page-default
+---
+extends includes/_app
+
+
+block main
+
+    // Intro :: Start
+    .intro
+        .container-fluid
+
+            .swiper-container.swiper-intro.js-swiper-intro
+                .swiper-wrapper
+                    .swiper-slide
+
+                        .intro__item(data-swiper-parallax-opacity="0")
+
+                            .row
+                                .col-md-6.push-md-6
+
+                                    figure.intro__item-image
+                                        img(src="images/img-intro-01.png", alt="")
+
+                                        dl.intro__item-dl
+                                            dt 20
+                                            dd реализованных проектов
+                                            dt 110 млн. руб.
+                                            dd сэкономили наши клиенты
+
+                                .col-md-6.pull-md-6
+
+                                    .intro__item-desc
+                                        h2.intro__item-title Снизим затраты #[br] на энергоснабжение для #[br] Вашего бизнеса до 30%
+                                        p.intro__item-text Начните экономить на оплате электроэнергии без первоначальных вложений, а мы позаботимся, чтобы энергоснабжение вашего бизнеса стало оптимальным и будем отстаивать Ваши интересы
+                                        .intro__item-control
+                                        
+                                            .swiper-control
+                                                button.swiper-prev.js-swiper-intro-prev
+                                                    +sprite('icon-prev')
+                                                .swiper-pagination.js-swiper-intro-pagination
+                                                button.swiper-next.js-swiper-intro-next
+                                                    +sprite('icon-next')
+                                    
+                                            a(href="#popup-request" data-fancybox).ui-btn.ui-btn--red
+                                                | Призыв к действию
+                                                +sprite('icon-arrow-btn')
+
+                    .swiper-slide
+
+                        .intro__item(data-swiper-parallax-opacity="0")
+
+                            .row
+                                .col-md-6.push-md-6
+
+                                    figure.intro__item-image
+                                        img(src="images/img-intro-01.png", alt="")
+
+                                        dl.intro__item-dl
+                                            dt 20
+                                            dd реализованных проектов
+                                            dt 110 млн. руб.
+                                            dd сэкономили наши клиенты
+
+                                .col-md-6.pull-md-6
+
+                                    .intro__item-desc
+                                        h2.intro__item-title Снизим затраты #[br] на энергоснабжение для #[br] Вашего бизнеса до 30%
+                                        p.intro__item-text Начните экономить на оплате электроэнергии без первоначальных вложений, а мы позаботимся, чтобы энергоснабжение вашего бизнеса стало оптимальным и будем отстаивать Ваши интересы
+                                        .intro__item-control
+                                        
+                                            .swiper-control
+                                                button.swiper-prev.js-swiper-intro-prev
+                                                    +sprite('icon-prev')
+                                                .swiper-pagination.js-swiper-intro-pagination
+                                                button.swiper-next.js-swiper-intro-next
+                                                    +sprite('icon-next')
+                                    
+                                            a(href="#popup-request" data-fancybox).ui-btn.ui-btn--red
+                                                | Призыв к действию
+                                                +sprite('icon-arrow-btn')
+
+                    .swiper-slide
+
+                        .intro__item(data-swiper-parallax-opacity="0")
+
+                            .row
+                                .col-md-6.push-md-6
+
+                                    figure.intro__item-image
+                                        img(src="images/img-intro-01.png", alt="")
+
+                                        dl.intro__item-dl
+                                            dt 20
+                                            dd реализованных проектов
+                                            dt 110 млн. руб.
+                                            dd сэкономили наши клиенты
+
+                                .col-md-6.pull-md-6
+
+                                    .intro__item-desc
+                                        h2.intro__item-title Снизим затраты #[br] на энергоснабжение для #[br] Вашего бизнеса до 30%
+                                        p.intro__item-text Начните экономить на оплате электроэнергии без первоначальных вложений, а мы позаботимся, чтобы энергоснабжение вашего бизнеса стало оптимальным и будем отстаивать Ваши интересы
+                                        .intro__item-control
+                                        
+                                            .swiper-control
+                                                button.swiper-prev.js-swiper-intro-prev
+                                                    +sprite('icon-prev')
+                                                .swiper-pagination.js-swiper-intro-pagination
+                                                button.swiper-next.js-swiper-intro-next
+                                                    +sprite('icon-next')
+                                    
+                                            a(href="#popup-request" data-fancybox).ui-btn.ui-btn--red
+                                                | Призыв к действию
+                                                +sprite('icon-arrow-btn')
+                                
+
+
+    // Intro :: End
+
+
+    // Services :: Start
+    .services(data-tabs)
+        .container-fluid
+
+            .services__topbar
+                h2.services__title Услуги 
+                .services__control
+                    button.services__control-btn.is-active(data-tabs-btn="01")
+                        span.services__control-btn-icon
+                            +sprite('icon-services-01')
+                        span.services__control-btn-text Услуги по снижению #[br] стоимости электроэнергии
+                    button.services__control-btn(data-tabs-btn="02")
+                        span.services__control-btn-icon
+                            +sprite('icon-services-02')
+                        span.services__control-btn-text Юридические услуги #[br] и защита прав потребителей
+                    button.services__control-btn(data-tabs-btn="03")
+                        span.services__control-btn-icon
+                            +sprite('icon-services-03')
+                        span.services__control-btn-text Инжиниринговые #[br] услуги
+
+            .services__section
+
+                .services__content.is-active(data-tabs-content="01")
+
+                    ul.services__grid
+                        li
+                            a(href="#").services__item
+                                h3.services__item-title Гарантированное снижение тарифов и выход на оптовый рынок ээ
+                                mark.services__item-mark Крупным потребителям с максимальной мощностью свыше 670 кВт
+                                p.services__item-text Выбирайте любого понравившегося поставщика ээ, выходите на оптовый рынок и начинайте экономить без первоначальных вложений. А все необходимое для этого сделаем мы
+                        li
+                            a(href="#").services__item
+                                h3.services__item-title Оптимизация условий энергоснабжения на розничном рынке ээ
+                                mark.services__item-mark Ритейлерам, Субабонентам, Потребителям с максимальной мощностью менее 670 кВт
+                                p.services__item-text Уменьшаем стоимость электроэнергии, настраиваем учет ээ, отстаиваем Ваши интересы перед монополистами
+                        li
+                            a(href="#").services__item
+                                h3.services__item-title Покупка электроэнергии у генерации и потребителей с блок-станциями
+                                mark.services__item-mark владельцам объектов генерации менее 25 МВт или на розничном рынке ээ
+                                p.services__item-text Владеете объектом генерации? Купим электроэнергию дороже цены гарантирующего поставщика
+                        li
+                            a(href="#").services__item
+                                h3.services__item-title Гарантированное снижение тарифов и выход на оптовый рынок ээ
+                                mark.services__item-mark Крупным потребителям с максимальной мощностью свыше 670 кВт
+                                p.services__item-text Выбирайте любого понравившегося поставщика ээ, выходите на оптовый рынок и начинайте экономить без первоначальных вложений. А все необходимое для этого сделаем мы
+                        li
+                            a(href="#").services__item
+                                h3.services__item-title Оптимизация условий энергоснабжения на розничном рынке ээ
+                                mark.services__item-mark Ритейлерам, Субабонентам, Потребителям с максимальной мощностью менее 670 кВт
+                                p.services__item-text Уменьшаем стоимость электроэнергии, настраиваем учет ээ, отстаиваем Ваши интересы перед монополистами
+
+                .services__content(data-tabs-content="02") Юридические услуги и защита прав потребителей
+                .services__content(data-tabs-content="03") Инжиниринговые услуги
+
+    // Services :: End
+
+
+    // Reviews :: Start
+    .reviews
+        .container-fluid
+
+            h2.reviews__title Реализованные #[br] проекты
+
+            .reviews__section
+
+                .swiper-reviews.js-swiper-reviews
+                    .swiper-container.swiper-reviews-slides.js-swiper-reviews-slides
+                        .swiper-wrapper
+                            .swiper-slide
+
+                                .reviews__slide
+                                    .reviews__slide-sidebar
+                                        figure.reviews__slide-image
+                                            img(src="images/img-reviews-01.png", alt="")
+                                        p.reviews__slide-caption ПАО «МегаФон»
+                                    .reviews__slide-content
+                                        blockquote.reviews__slide-blockquote Начните экономить на оплате электроэнергии без первоначальных вложений, а мы позаботимся, чтобы энергоснабжение вашего бизнеса стало оптимальным и будем отстаивать Ваши интересы. Начните экономить на оплате электроэнергии без первоначальных вложений, а мы позаботимся, чтобы энергоснабжение вашего бизнеса стало оптимальным и будем отстаивать Ваши интересы
+
+                            .swiper-slide
+
+                                .reviews__slide
+                                    .reviews__slide-sidebar
+                                        figure.reviews__slide-image
+                                            img(src="images/img-reviews-02.png", alt="")
+                                        p.reviews__slide-caption ПАО «Мозайка»
+                                    .reviews__slide-content
+                                        blockquote.reviews__slide-blockquote Начните экономить на оплате электроэнергии без первоначальных вложений, а мы позаботимся, чтобы энергоснабжение вашего бизнеса стало оптимальным и будем отстаивать Ваши интересы. Начните экономить на оплате электроэнергии без первоначальных вложений, а мы позаботимся, чтобы энергоснабжение вашего бизнеса стало оптимальным и будем отстаивать Ваши интересы
+
+                            .swiper-slide
+
+                                .reviews__slide
+                                    .reviews__slide-sidebar
+                                        figure.reviews__slide-image
+                                            img(src="images/img-reviews-03.png", alt="")
+                                        p.reviews__slide-caption ПАО «Alpha»
+                                    .reviews__slide-content
+                                        blockquote.reviews__slide-blockquote Начните экономить на оплате электроэнергии без первоначальных вложений, а мы позаботимся, чтобы энергоснабжение вашего бизнеса стало оптимальным и будем отстаивать Ваши интересы. Начните экономить на оплате электроэнергии без первоначальных вложений, а мы позаботимся, чтобы энергоснабжение вашего бизнеса стало оптимальным и будем отстаивать Ваши интересы
+
+                            .swiper-slide
+
+                                .reviews__slide
+                                    .reviews__slide-sidebar
+                                        figure.reviews__slide-image
+                                            img(src="images/img-reviews-04.png", alt="")
+                                        p.reviews__slide-caption ПАО «Лебедевская...»
+                                    .reviews__slide-content
+                                        blockquote.reviews__slide-blockquote Начните экономить на оплате электроэнергии без первоначальных вложений, а мы позаботимся, чтобы энергоснабжение вашего бизнеса стало оптимальным и будем отстаивать Ваши интересы. Начните экономить на оплате электроэнергии без первоначальных вложений, а мы позаботимся, чтобы энергоснабжение вашего бизнеса стало оптимальным и будем отстаивать Ваши интересы
+
+                        .swiper-pagination.js-swiper-reviews-pagination
+
+
+                    .swiper-container.swiper-reviews-thumbs.js-swiper-reviews-thumbs
+                        .swiper-wrapper
+                            .swiper-slide
+                                figure.reviews__thumb
+                                    img(src="images/img-reviews-01.png", alt="")
+                            .swiper-slide
+                                figure.reviews__thumb
+                                    img(src="images/img-reviews-02.png", alt="")
+                            .swiper-slide
+                                figure.reviews__thumb
+                                    img(src="images/img-reviews-03.png", alt="")
+                            .swiper-slide
+                                figure.reviews__thumb
+                                    img(src="images/img-reviews-04.png", alt="")
+                            .swiper-slide
+                                figure.reviews__thumb
+                                    a(href="#").reviews__thumb-link
+                                        | Все отзывы
+                                        +sprite('icon-arrow-right')
+                     
+                        button.swiper-prev.js-swiper-reviews-prev
+                            +sprite('icon-prev')
+                        
+                        button.swiper-next.js-swiper-reviews-next
+                            +sprite('icon-next')
+                            
+                            
+
+    // Reviews :: End
+
+
+    // Interests :: Start
+    .interests
+        .container-fluid
+
+            h2.interests__title Интересы каких #[br] потребителей мы защитили
+
+            .interests__section
+
+                ul.interests__caption
+                    li Защита интересов потребителей при безучетном потреблении ээ
+                    li Взыскание переплаты за электроэнергию в пользу потребителя (неосновательного обогащение поставщика электроэнергии)
+                    li Защита интересов потребителей при безучетном потреблении ээ
+
+                ul.interests__grid
+                    li
+                        .interests__group
+                            .swiper-container.swiper-interests.js-swiper-interests
+                                .swiper-wrapper
+                                    .swiper-slide
+                                        .interests__item
+                                            figure.interests__item-image
+                                                img(src="images/img-interests-01.png", alt="alt")
+                                            h3.interests__item-title ООО «Агрофирма Бунятино»
+                                            p.interests__item-file
+                                                a(href="#").interests__item-file-name А40-267051/2018
+                                                a(href="#").interests__item-file-view
+                                                    +sprite('icon-view')
+                                                a(href="#").interests__item-file-download
+                                                    +sprite('icon-download')
+                                            p.interests__item-text Начните экономить на оплате электроэнергии без первоначальных вложений, а мы позаботимся, чтобы энергоснабжение вашего бизнеса стало оптимальным и будем отстаивать Ваши интересы. Начните экономить на оплате электроэнергии без первоначальных вложений, а мы позаботимся, чтобы энергоснабжение вашего бизнеса стало оптимальным...
+
+                                    .swiper-slide
+                                        .interests__item
+                                            figure.interests__item-image
+                                                img(src="images/img-interests-01.png", alt="alt")
+                                            h3.interests__item-title ООО «Агрофирма Бунятино»
+                                            p.interests__item-file
+                                                a(href="#").interests__item-file-name А40-267051/2018
+                                                a(href="#").interests__item-file-view
+                                                    +sprite('icon-view')
+                                                a(href="#").interests__item-file-download
+                                                    +sprite('icon-download')
+                                            p.interests__item-text Начните экономить на оплате электроэнергии без первоначальных вложений, а мы позаботимся, чтобы энергоснабжение вашего бизнеса стало оптимальным и будем отстаивать Ваши интересы.
+
+                                    .swiper-slide
+                                        .interests__item
+                                            figure.interests__item-image
+                                                img(src="images/img-interests-01.png", alt="alt")
+                                            h3.interests__item-title ООО «Агрофирма Бунятино»
+                                            p.interests__item-file
+                                                a(href="#").interests__item-file-name А40-267051/2018
+                                                a(href="#").interests__item-file-view
+                                                    +sprite('icon-view')
+                                                a(href="#").interests__item-file-download
+                                                    +sprite('icon-download')
+                                            p.interests__item-text Начните экономить на оплате электроэнергии без первоначальных вложений, а мы позаботимся, чтобы энергоснабжение вашего бизнеса стало оптимальным и будем отстаивать Ваши интересы.
+
+                                .swiper-control
+                                    button.swiper-prev.js-swiper-interests-prev
+                                        +sprite('icon-prev')
+                                    .swiper-pagination.js-swiper-interests-pagination
+                                    button.swiper-next.js-swiper-interests-next
+                                        +sprite('icon-next')
+
+                    li
+                        .interests__group
+                            .swiper-container.swiper-interests.js-swiper-interests
+                                .swiper-wrapper
+                                    .swiper-slide
+                                        .interests__item
+                                            figure.interests__item-image
+                                                img(src="images/img-interests-02.png", alt="alt")
+                                            h3.interests__item-title ООО «Агрофирма Бунятино»
+                                            p.interests__item-file
+                                                a(href="#").interests__item-file-name А40-267051/2018
+                                                a(href="#").interests__item-file-view
+                                                    +sprite('icon-view')
+                                                a(href="#").interests__item-file-download
+                                                    +sprite('icon-download')
+                                            p.interests__item-text Начните экономить на оплате электроэнергии без первоначальных вложений, а мы позаботимся, чтобы энергоснабжение вашего бизнеса стало оптимальным и будем отстаивать Ваши интересы.
+
+                                    .swiper-slide
+                                        .interests__item
+                                            figure.interests__item-image
+                                                img(src="images/img-interests-02.png", alt="alt")
+                                            h3.interests__item-title ООО «Агрофирма Бунятино»
+                                            p.interests__item-file
+                                                a(href="#").interests__item-file-name А40-267051/2018
+                                                a(href="#").interests__item-file-view
+                                                    +sprite('icon-view')
+                                                a(href="#").interests__item-file-download
+                                                    +sprite('icon-download')
+                                            p.interests__item-text Начните экономить на оплате электроэнергии без первоначальных вложений, а мы позаботимся, чтобы энергоснабжение вашего бизнеса стало оптимальным и будем отстаивать Ваши интересы.
+
+                                    .swiper-slide
+                                        .interests__item
+                                            figure.interests__item-image
+                                                img(src="images/img-interests-02.png", alt="alt")
+                                            h3.interests__item-title ООО «Агрофирма Бунятино»
+                                            p.interests__item-file
+                                                a(href="#").interests__item-file-name А40-267051/2018
+                                                a(href="#").interests__item-file-view
+                                                    +sprite('icon-view')
+                                                a(href="#").interests__item-file-download
+                                                    +sprite('icon-download')
+                                            p.interests__item-text Начните экономить на оплате электроэнергии без первоначальных вложений, а мы позаботимся, чтобы энергоснабжение вашего бизнеса стало оптимальным и будем отстаивать Ваши интересы.
+
+                                .swiper-control
+                                    button.swiper-prev.js-swiper-interests-prev
+                                        +sprite('icon-prev')
+                                    .swiper-pagination.js-swiper-interests-pagination
+                                    button.swiper-next.js-swiper-interests-next
+                                        +sprite('icon-next')
+
+                    li
+                        .interests__group
+                            .swiper-container.swiper-interests.js-swiper-interests
+                                .swiper-wrapper
+                                    .swiper-slide
+                                        .interests__item
+                                            figure.interests__item-image
+                                                img(src="images/img-interests-03.png", alt="alt")
+                                            h3.interests__item-title ООО «Агрофирма Бунятино»
+                                            p.interests__item-file
+                                                a(href="#").interests__item-file-name А40-267051/2018
+                                                a(href="#").interests__item-file-view
+                                                    +sprite('icon-view')
+                                                a(href="#").interests__item-file-download
+                                                    +sprite('icon-download')
+                                            p.interests__item-text Начните экономить на оплате электроэнергии без первоначальных вложений, а мы позаботимся, чтобы энергоснабжение вашего бизнеса стало оптимальным и будем отстаивать Ваши интересы.
+
+                                    .swiper-slide
+                                        .interests__item
+                                            figure.interests__item-image
+                                                img(src="images/img-interests-03.png", alt="alt")
+                                            h3.interests__item-title ООО «Агрофирма Бунятино»
+                                            p.interests__item-file
+                                                a(href="#").interests__item-file-name А40-267051/2018
+                                                a(href="#").interests__item-file-view
+                                                    +sprite('icon-view')
+                                                a(href="#").interests__item-file-download
+                                                    +sprite('icon-download')
+                                            p.interests__item-text Начните экономить на оплате электроэнергии без первоначальных вложений, а мы позаботимся, чтобы энергоснабжение вашего бизнеса стало оптимальным и будем отстаивать Ваши интересы.
+
+                                    .swiper-slide
+                                        .interests__item
+                                            figure.interests__item-image
+                                                img(src="images/img-interests-03.png", alt="alt")
+                                            h3.interests__item-title ООО «Агрофирма Бунятино»
+                                            p.interests__item-file
+                                                a(href="#").interests__item-file-name А40-267051/2018
+                                                a(href="#").interests__item-file-view
+                                                    +sprite('icon-view')
+                                                a(href="#").interests__item-file-download
+                                                    +sprite('icon-download')
+                                            p.interests__item-text Начните экономить на оплате электроэнергии без первоначальных вложений, а мы позаботимся, чтобы энергоснабжение вашего бизнеса стало оптимальным и будем отстаивать Ваши интересы.
+
+                                .swiper-control
+                                    button.swiper-prev.js-swiper-interests-prev
+                                        +sprite('icon-prev')
+                                    .swiper-pagination.js-swiper-interests-pagination
+                                    button.swiper-next.js-swiper-interests-next
+                                        +sprite('icon-next')
+
+    // Interests :: End
+
+
+
+    // Reviews :: Start
+    .reviews
+        .container-fluid
+
+            h2.reviews__title Отзывы наших #[br] клиентов
+
+            .reviews__section
+
+                .swiper-reviews.js-swiper-reviews
+                    .swiper-container.swiper-reviews-slides.js-swiper-reviews-slides
+                        .swiper-wrapper
+                            .swiper-slide
+
+                                .reviews__slide
+                                    .reviews__slide-sidebar
+                                        figure.reviews__slide-image
+                                            img(src="images/img-reviews-05.png", alt="")
+                                        p.reviews__slide-caption Игорь Лебедев #[small ООО «Лебедевская агрофирма»]
+                                    .reviews__slide-content
+                                        blockquote.reviews__slide-blockquote Начните экономить на оплате электроэнергии без первоначальных вложений, а мы позаботимся, чтобы энергоснабжение вашего бизнеса стало оптимальным и будем отстаивать Ваши интересы. Начните экономить на оплате электроэнергии без первоначальных вложений, а мы позаботимся, чтобы энергоснабжение вашего бизнеса стало оптимальным и будем отстаивать Ваши интересы
+
+                            .swiper-slide
+
+                                .reviews__slide
+                                    .reviews__slide-sidebar
+                                        figure.reviews__slide-image
+                                            img(src="images/img-reviews-01.png", alt="")
+                                        p.reviews__slide-caption ПАО «МегаФон»
+                                    .reviews__slide-content
+                                        blockquote.reviews__slide-blockquote Начните экономить на оплате электроэнергии без первоначальных вложений, а мы позаботимся, чтобы энергоснабжение вашего бизнеса стало оптимальным и будем отстаивать Ваши интересы. Начните экономить на оплате электроэнергии без первоначальных вложений, а мы позаботимся, чтобы энергоснабжение вашего бизнеса стало оптимальным и будем отстаивать Ваши интересы
+
+                            .swiper-slide
+
+                                .reviews__slide
+                                    .reviews__slide-sidebar
+                                        figure.reviews__slide-image
+                                            img(src="images/img-reviews-02.png", alt="")
+                                        p.reviews__slide-caption ПАО «Мозайка»
+                                    .reviews__slide-content
+                                        blockquote.reviews__slide-blockquote Начните экономить на оплате электроэнергии без первоначальных вложений, а мы позаботимся, чтобы энергоснабжение вашего бизнеса стало оптимальным и будем отстаивать Ваши интересы. Начните экономить на оплате электроэнергии без первоначальных вложений, а мы позаботимся, чтобы энергоснабжение вашего бизнеса стало оптимальным и будем отстаивать Ваши интересы
+
+                            .swiper-slide
+
+                                .reviews__slide
+                                    .reviews__slide-sidebar
+                                        figure.reviews__slide-image
+                                            img(src="images/img-reviews-03.png", alt="")
+                                        p.reviews__slide-caption ПАО «Alpha»
+                                    .reviews__slide-content
+                                        blockquote.reviews__slide-blockquote Начните экономить на оплате электроэнергии без первоначальных вложений, а мы позаботимся, чтобы энергоснабжение вашего бизнеса стало оптимальным и будем отстаивать Ваши интересы. Начните экономить на оплате электроэнергии без первоначальных вложений, а мы позаботимся, чтобы энергоснабжение вашего бизнеса стало оптимальным и будем отстаивать Ваши интересы
+
+                        .swiper-pagination.js-swiper-reviews-pagination
+
+                            
+                    .swiper-container.swiper-reviews-thumbs.js-swiper-reviews-thumbs
+                        .swiper-wrapper
+                            .swiper-slide
+                                figure.reviews__thumb
+                                    img(src="images/img-reviews-04.png", alt="")
+                            .swiper-slide
+                                figure.reviews__thumb
+                                    img(src="images/img-reviews-01.png", alt="")
+                            .swiper-slide
+                                figure.reviews__thumb
+                                    img(src="images/img-reviews-02.png", alt="")
+                            .swiper-slide
+                                figure.reviews__thumb
+                                    img(src="images/img-reviews-03.png", alt="")
+                            
+                            .swiper-slide
+                                figure.reviews__thumb
+                                    a(href="#").reviews__thumb-link
+                                        | Все отзывы
+                                        +sprite('icon-arrow-right')
+                     
+                        button.swiper-prev.js-swiper-reviews-prev
+                            +sprite('icon-prev')
+                        
+                        button.swiper-next.js-swiper-reviews-next
+                            +sprite('icon-next')
+                            
+                            
+
+    // Reviews :: End
+
+
+    // Advices :: Start
+    .advices
+        .container-fluid
+
+            h2.advices__title Советы экспертов
+
+            .advices__section
+
+                ul.advices__grid
+                    li
+                        a(href="#").advices__item
+                            figure.advices__item-image
+                                img(src="images/img-advices-01.png", alt="")
+                            h3.advices__item-title Как предприятию снизить затраты на электроэнергию без вложений
+                            p.advices__item-text Начните экономить на оплате электроэнергии без первоначальных вложений, а мы …
+                    li
+                        a(href="#").advices__item
+                            figure.advices__item-image
+                                img(src="images/img-advices-02.png", alt="")
+                            h3.advices__item-title Как предприятию снизить затраты на электроэнергию без вложений
+                            p.advices__item-text Начните экономить на оплате электроэнергии без первоначальных вложений, а мы …
+                    li
+                        a(href="#").advices__item
+                            figure.advices__item-image
+                                img(src="images/img-advices-03.png", alt="")
+                            h3.advices__item-title Как предприятию снизить затраты на электроэнергию без вложений
+                            p.advices__item-text Начните экономить на оплате электроэнергии без первоначальных вложений, а мы …
+
+
+                .advices__control
+                    a(href="#").ui-btn.ui-btn--red
+                        | Все советы
+                        +sprite('icon-arrow-btn')
+
+    // Advices :: End
+
+
+    // Geo :: Start
+    .geo
+        .container-fluid
+
+            .geo__map#map
+
+            .geo__desc
+
+                h2.geo__title География деятельности
+
+                ul.geo__info
+                    li #[span(data-number="28") -] #[small регионов]
+                    li #[span(data-number="46") -] #[small городов]
+                    li #[span(data-number="89") -] #[small предприятий]
+
+    // Geo :: End
+
+
+    

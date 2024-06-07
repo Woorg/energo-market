@@ -1,0 +1,89 @@
+// --------------------------------------------------------------------------
+// Profit
+// --------------------------------------------------------------------------
+
+.profit {
+    margin: 0 0 60px;
+    @include breakpoint(xl) {
+        margin: 0 0 120px;
+    }
+}
+
+.profit__text {
+    text-align: center;
+    font-size: 25px;
+    line-height: 1.5;
+    font-weight: 600;
+    text-transform: uppercase;
+    max-width: 760px;
+    mark {
+        background: none;
+        color: #DA2141;
+    }
+    p {
+        margin: 0 0 40px;
+        &:last-child {
+            margin: 0;
+        }
+    }
+    margin: 0 auto 60px;
+    @include breakpoint(xl) {
+        margin: 0 auto 130px;
+    }
+}
+
+.profit__title {
+    @extend .ui-title-38;
+    margin: 0 0 35px;
+    position: relative;
+    z-index: 2;
+}
+
+.profit__section {
+    position: relative;
+    z-index: 1;
+    padding: 40px 0 80px;
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -70px;
+        left: -240px;
+        right: -80px;
+        bottom: 0;
+        background: linear-gradient(135deg, #FCFCFD 0%, #F3F7FB 100%);
+        z-index: -1;
+    }
+
+    .row {
+		margin: 0 -25px -50px;
+		& > [class^="col"] {
+			padding: 0 25px 50px;
+		}
+	}
+
+    .ui-card {
+        h4 {
+            @extend .ui-title-19;
+            line-height: 1.4;
+            margin: 0 0 20px;
+        }
+        p {
+            margin: 0 0 10px;
+        }
+        ul {
+            @extend .ui-ul;
+            margin: 0;
+            font-size: 15px;
+            line-height: 1.4;
+            font-weight: 400;
+            & > li {
+                margin: 0 0 14px;
+                &:after {
+                    top: 5px;
+                }
+            }
+        }
+    }
+   
+}

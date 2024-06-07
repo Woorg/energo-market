@@ -1,0 +1,63 @@
+// --------------------------------------------------------------------------
+// Footer
+// --------------------------------------------------------------------------
+
+.footer {
+    background: #40494E;
+    color: #fff;
+
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+
+    padding: 25px 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1760px;
+    text-align: center;
+    @include breakpoint(md) {
+        text-align: left;
+        .container-fluid {
+            display: flex;
+            align-self: center;
+            justify-content: space-between;
+            
+        }
+    }
+
+    @include breakpoint(xl) {
+        font-size: 15px;
+        .container-fluid {
+            max-width: 1760px;
+            padding: 0 44px;
+        }
+    }
+}
+
+.footer__copyright {
+    padding: 10px 0;
+    margin: 0 20px 0 0;
+    flex: 1;
+}
+
+.footer__dev {
+    padding: 10px 0;
+    margin: 0;
+    flex: 0 0 auto;
+    white-space: nowrap;
+}
+
+.footer__dev-link {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+    margin: 0 0 0 16px;
+    transition: 0.3s ease;
+    img {
+        display: block;
+    }
+    &:hover {
+        transform: rotate(360deg);
+    }
+}

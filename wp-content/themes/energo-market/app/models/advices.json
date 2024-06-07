@@ -1,0 +1,72 @@
+{
+  "active": true,
+  "type": "cpt",
+  "name": "Advices",
+  "supports": [
+    "title",
+    "editor",
+    "comments",
+    "revisions",
+    "author",
+    "excerpt",
+    "page-attributes",
+    "thumbnail",
+    "custom-fields",
+    "post-formats"
+  ],
+  "labels": {
+    "has_one": "Совет",
+    "has_many": "Советы",
+    "text_domain": "sage",
+    "overrides": {
+      "name": "Все cоветы",
+      "singular_name": "Cовет",
+      "menu_name": "Все cоветы",
+      "name_admin_bar": "Все cоветы",
+      "add_new": "Добавить cовет",
+      "add_new_item": "Добавить новый cовет",
+      "edit_item": "Редактировать cовет",
+      "new_item": "Новый cовет",
+      "view_item": "Смотреть cовет",
+      "view_items": "Смотреть cоветы",
+      "search_items": "Искать cоветы",
+      "not_found": "Советы не найден",
+      "not_found_in_trash": "Совет не найдено in Trash.",
+      "parent_item-colon": "Parent cовет:",
+      "all_items": "Все cоветы",
+      "archives": "Советы",
+      "attributes": "Совет еttributes",
+      "insert_into_item": "Insert into cовет",
+      "uploaded_to_this_item": "Uploaded to this cовет",
+      "featured_image": "Featured Image",
+      "set_featured_image": "Set featured image",
+      "remove_featured_image": "Remove featured image",
+      "use_featured_image": "Use featured image",
+      "filter_items_list": "Filter cовет list",
+      "items_list_navigation": "Советы list navigation",
+      "items_list": "Все cоветы"
+    }
+  },
+  "config": {
+    "public": true,
+    "publicly_queryable": true,
+    "show_ui": true,
+    "show_in_menu": true,
+    "show_in_rest": true,
+    "query_var": true,
+    "has_archive": true,
+    "hierarchical": true,
+    "menu_position": null,
+    "can_export": true,
+    "capability_type": "post",
+    "taxonomies": [
+      ""
+    ],
+    "rewrite": {
+      "slug": "advices",
+      "with_front": true,
+      "feeds": true,
+      "pages": true
+    }
+  }
+}

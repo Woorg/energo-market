@@ -1,0 +1,63 @@
+// --------------------------------------------------------------------------
+// support
+// --------------------------------------------------------------------------
+
+.support {
+    margin: 0 0 60px;
+    @include breakpoint(xl) {
+        margin: 0 0 130px;
+    }
+}
+
+.support__title {
+    @extend .ui-title-38;
+    line-height: 1.32;
+    margin: 0 0 40px;
+    position: relative;
+    z-index: 2;
+}
+
+.support__section {
+    position: relative;
+    z-index: 1;
+    padding: 30px 30px 60px;
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -120px;
+        left: 0;
+        right: 0;
+        bottom: 10px;
+        background: linear-gradient(135deg, #FCFCFD 0%, #F3F7FB 100%);
+        z-index: -1;
+    }
+    @include breakpoint(md) {
+        padding: 40px 50px 40px;
+    }
+    @include breakpoint(xl) {
+        padding: 50px 100px 90px;
+        margin: 0 0 0 110px;
+    }
+}
+
+.support__text {
+    @extend .ui-text-18;
+    margin: 0 0 78px;
+}
+
+.support__menu {
+    margin: 0 -18px -36px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    & > li {
+        flex: 1;
+        padding: 0 18px 36px;
+    }
+
+    .ui-btn {
+        width: 100%;
+    }
+}

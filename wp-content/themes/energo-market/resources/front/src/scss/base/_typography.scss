@@ -1,0 +1,30 @@
+//- --------------------------------------------------------------------------
+//- Typography
+//- --------------------------------------------------------------------------
+
+
+body {
+    font: 400 15px/1.72 $fontBase;
+
+    @include breakpoint(xl) {
+        font-size: 18px;
+    }
+}
+
+
+* {
+    outline: none;
+}
+
+
+img, video {
+    max-width: 100%;
+}
+
+mark {
+    padding: 0;
+    background: #DA2141;
+    color: #fff;
+}
+
+input::-ms-clear { display: none; }

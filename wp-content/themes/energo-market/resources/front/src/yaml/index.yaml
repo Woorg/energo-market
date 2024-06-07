@@ -1,0 +1,22 @@
+ProjectTitle: Energo-market
+
+PageList:
+- file: homepage.html
+  ready: 100
+- file: styleguide.html
+  ready: 100
+- file: services-01.html
+  ready: 100
+- file: services-02.html
+  ready: 100
+- file: services-03.html
+  ready: 100
+- file: services-04.html
+  ready: 100
+- file: about.html
+  ready: 100
+# - file: critical.html
+  # ready: 10
+
+
+

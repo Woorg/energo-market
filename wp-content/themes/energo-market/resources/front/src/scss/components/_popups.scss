@@ -1,0 +1,67 @@
+// --------------------------------------------------------------------------
+// Popups
+// --------------------------------------------------------------------------
+
+
+.popup {
+    position: relative;
+    max-width: 100%;
+    width: 492px;
+    background: #fff;
+    border-radius: 0;
+    padding: 0;
+    margin: 0 auto;
+    padding: 40px 30px 62px;
+    box-shadow: 0px 10px 14px rgba(0, 0, 0, 0.03);
+
+    @include breakpoint(md) {
+        padding: 40px 50px 62px;
+    }
+}
+
+.popup__close {
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+
+    border: none;
+    padding: 0;
+    background: rgba(255,255,255,0.1);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    color: #fff;
+    transition: 0.25s;
+    svg {
+        display: block;
+    }
+    &:hover {
+        background: rgba(255,255,255,0.4);
+        color: #fff;
+    }
+
+    @include breakpoint(md) {
+        right: auto;
+        left: 100%;
+    }
+}
+
+
+
+.popup__title {
+    @extend .ui-title-38;
+    text-align: center;
+    margin: 0 0 24px;
+}
+
+.popup__form {
+    .ui-field {
+        margin: 0 0 12px;
+    }
+    .ui-btn {
+        margin: 28px 0 0;
+    }
+}

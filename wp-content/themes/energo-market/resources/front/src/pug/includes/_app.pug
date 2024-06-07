@@ -1,0 +1,60 @@
+include _mixins
+doctype html
+html(lang="ru" class=bodyClass)
+    head
+        meta(charset="utf-8")
+        
+        meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        meta(name="theme-color" content="#000")
+        meta(name="format-detection" content="telephone=no")
+        meta(http-equiv="X-UA-Compatible" content="IE=Edge")
+
+        title= title || 'Page name'
+
+        meta(property="og:type" content="website")
+        meta(property="og:title" content="")
+        meta(property="og:description" content="Краткое описание")
+        meta(property="og:url" content="http://websiteurl")
+        meta(property="og:image" content="http://websiteurl/image.jpg")
+        meta(property="og:site_name" content="Название")
+
+        link(rel="preload" href="fonts/Manrope-Bold.woff2" as="font" type="font/woff2" crossorigin)
+        link(rel="preload" href="fonts/Manrope-SemiBold.woff2" as="font" type="font/woff2" crossorigin)
+        link(rel="preload" href="fonts/Manrope-Medium.woff2" as="font" type="font/woff2" crossorigin)
+        link(rel="preload" href="fonts/Manrope-Regular.woff2" as="font" type="font/woff2" crossorigin)
+
+        <!-- Critical CSS -->
+
+        include _loadCss
+        
+
+    body
+        
+        .app
+
+            // Header :: Start
+            .header
+                block header
+                    include _header
+            // Header :: End
+
+            // Main :: Start
+            .main
+                block main
+            
+            // Main :: End
+            
+            // Footer :: Start
+            .footer
+                block footer
+                    include _footer
+            // Footer :: End
+
+            // Popups :: Start
+            include _popups
+            // Popups :: End
+
+        // Scripts :: Start
+        include _loadScripts
+        // Scripts :: End
+

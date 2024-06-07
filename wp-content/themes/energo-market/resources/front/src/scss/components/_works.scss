@@ -1,0 +1,60 @@
+// --------------------------------------------------------------------------
+// Works
+// --------------------------------------------------------------------------
+
+.works {
+    margin: 0 0 60px;
+    @include breakpoint(xl) {
+        margin: 0 0 130px;
+    }
+}
+
+.works__title {
+    @extend .ui-title-38;
+    margin: 0 0 40px;
+    position: relative;
+    z-index: 2;
+}
+
+.works__section {
+    position: relative;
+    z-index: 2;
+    padding: 48px 0 80px;
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -240px;
+        right: -80px;
+        bottom: 0;
+        background: linear-gradient(135deg, #FCFCFD 0%, #F3F7FB 100%);
+        z-index: -1;
+    }
+
+    h3 {
+        @extend .ui-title-25;
+        margin: 0 0 50px;
+    }
+
+    h4 {
+        @extend .ui-title-19;
+        margin: 0 0 50px;
+    }
+
+    p {
+        margin: 0 0 30px;
+        max-width: 94%;
+        & + h3 {
+            padding: 40px 0 0;
+        }
+    }
+
+    figure {
+        @extend .ui-image;
+        &:last-child {
+            margin: 0;
+        }
+    }
+    
+}

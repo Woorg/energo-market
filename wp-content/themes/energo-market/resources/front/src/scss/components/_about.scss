@@ -1,0 +1,65 @@
+// --------------------------------------------------------------------------
+// About
+// --------------------------------------------------------------------------
+
+.about {
+    margin: 0 0 60px;
+    @include breakpoint(xl) {
+        margin: 0 0 120px;
+    }
+}
+
+.about__title {
+    @extend .ui-title-38;
+    margin: 0 0 50px;
+}
+
+.about__text {
+    display: block;
+    font-size: 19px;
+    line-height: 1.4;
+    font-weight: 600;
+    margin: 0 0 40px;
+    @include breakpoint(xl) {
+        margin: 0 0 80px;
+    }
+}
+
+.about__section {
+    padding: 70px 0 78px;
+    position: relative;
+    z-index: 1;
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -240px;
+        right: -80px;
+        bottom: 0;
+        background: linear-gradient(135deg, #FCFCFD 0%, #F3F7FB 100%);
+        z-index: -1;
+    }
+
+    .row {
+		margin: 0 -25px -50px;
+		& > [class^="col"] {
+			padding: 0 25px 50px;
+		}
+    }
+    
+    h3 {
+        @extend .ui-title-25;
+        margin: 0 0 50px;
+    }
+
+    .ui-card {
+        h4 {
+            @extend .ui-title-19;
+            line-height: 1.47;
+            font-weight: 600;
+            margin: 0 0 30px;
+        }
+    }
+}

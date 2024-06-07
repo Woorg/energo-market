@@ -1,0 +1,72 @@
+{
+  "active": true,
+  "type": "cpt",
+  "name": "Portfolio",
+  "supports": [
+    "title",
+    "editor",
+    "comments",
+    "revisions",
+    "author",
+    "excerpt",
+    "page-attributes",
+    "thumbnail",
+    "custom-fields",
+    "post-formats"
+  ],
+  "labels": {
+    "has_one": "Кейс",
+    "has_many": "Портфолио",
+    "text_domain": "sage",
+    "overrides": {
+      "name": "Все кейсы",
+      "singular_name": "Кейс",
+      "menu_name": "Портфолио",
+      "name_admin_bar": "Все кейсы",
+      "add_new": "Добавить кейс",
+      "add_new_item": "Добавить новый кейс",
+      "edit_item": "Редактировать кейс",
+      "new_item": "Новый кейс",
+      "view_item": "Смотреть кейс",
+      "view_items": "Смотреть кейсы",
+      "search_items": "Искать кейсы",
+      "not_found": "Кейс не найден",
+      "not_found_in_trash": "Кейс не найдено in Trash.",
+      "parent_item-colon": "Parent кейс:",
+      "all_items": "Все кейсы",
+      "archives": "Кейсы",
+      "attributes": "Кейс еttributes",
+      "insert_into_item": "Insert into кейс",
+      "uploaded_to_this_item": "Uploaded to this кейс",
+      "featured_image": "Featured Image",
+      "set_featured_image": "Set featured image",
+      "remove_featured_image": "Remove featured image",
+      "use_featured_image": "Use featured image",
+      "filter_items_list": "Filter кейс list",
+      "items_list_navigation": "Кейсы list navigation",
+      "items_list": "Все кейсы"
+    }
+  },
+  "config": {
+    "public": true,
+    "publicly_queryable": true,
+    "show_ui": true,
+    "show_in_menu": true,
+    "show_in_rest": true,
+    "query_var": true,
+    "has_archive": true,
+    "hierarchical": true,
+    "menu_position": null,
+    "can_export": true,
+    "capability_type": "post",
+    "taxonomies": [
+      ""
+    ],
+    "rewrite": {
+      "slug": "portfolio",
+      "with_front": true,
+      "feeds": true,
+      "pages": true
+    }
+  }
+}

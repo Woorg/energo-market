@@ -1,0 +1,96 @@
+// --------------------------------------------------------------------------
+// Contacts
+// --------------------------------------------------------------------------
+
+.contacts {
+    margin: 0 0 60px;
+    @include breakpoint(xl) {
+        margin: 0 0 130px;
+    }
+}
+
+.contacts__title {
+    @extend .ui-title-38;
+    line-height: 1.32;
+    margin: 0 0 50px;
+    position: relative;
+    z-index: 2;
+}
+
+.contacts__section {
+    position: relative;
+    z-index: 1;
+    @include breakpoint(xl) {
+        margin: 0 0 0 110px;
+    }
+}
+
+
+.contacts__list {
+    margin: 0 -32px -50px;
+    padding: 0 0 40px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    & > li {
+        padding: 0 32px 50px;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    @include breakpoint(md) {
+        & > li {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+}
+
+.contacts__address {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: 400;
+    font-style: normal;
+    max-width: 530px;
+    strong {
+        @extend .ui-title-19;
+        margin: 0 0 20px;
+    }
+    p {
+        margin: 0;
+    }
+}
+
+.contacts__control {
+    margin: 0 0 35px;
+    display: flex;
+}
+
+.contacts__control-btn {
+    display: block;
+    border: none;
+    border-bottom: 2px solid transparent;
+    background: none;
+    padding: 0 20px 15px;
+
+    font: 700 18px/24px $fontBase;
+    letter-spacing: -0.423px;
+
+    color: rgba(0,0,0,0.5);
+    transition: 0.25s;
+    cursor: pointer;
+    &:hover {
+        color: rgba(0,0,0,1);
+    }
+    &.is-active {
+        color: rgba(0,0,0,1);
+        border-color:  #DA2141;
+    }
+}
+
+.contacts__map {
+    background: #ccc;
+    height: 416px;
+}

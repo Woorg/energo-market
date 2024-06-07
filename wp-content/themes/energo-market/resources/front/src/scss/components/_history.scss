@@ -1,0 +1,122 @@
+// --------------------------------------------------------------------------
+// History
+// --------------------------------------------------------------------------
+
+.history {
+    margin: 0 0 60px;
+    @include breakpoint(xl) {
+        margin: 0 0 150px;
+    }
+}
+
+.history__title {
+    @extend .ui-title-38;
+    margin: 0 0 55px;
+    position: relative;
+    z-index: 2;
+}
+
+.history__section {
+    position: relative;
+    z-index: 1;
+    padding: 70px 0 77px;
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -80px;
+        right: -240px;
+        bottom: 0;
+        background: #F9FBFC;
+        z-index: -1;
+    }
+    .row {
+        margin: 0 -25px;
+        & > [class^="col"] {
+            padding: 0 25px;
+        }
+    }
+
+   
+}
+
+
+
+.history__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    & > li {
+        position: relative;
+        margin: 0 0 40px;
+        &:last-child {
+            margin: 0;
+            .history__item:after {
+                display: none;
+            }
+        }
+    }
+}
+
+.history__item {
+    position: relative;
+    z-index: 1;
+    @include breakpoint(md) {
+        padding: 0 0 0 165px;
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 20px;
+            left: 60px;
+            width: 1px;
+            background: #40494E;
+            bottom: -40px;
+            z-index: -1;
+        }
+    }
+}
+
+.history__item-date {
+    display: block;
+    font-size: 25px;
+    line-height: 58px;
+    font-weight: 600;
+    color: #0188E7;
+    margin: 0 0 20px;
+    background: #F9FBFC;
+    @include breakpoint(md) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+        width: 120px;
+        text-align: center;
+        white-space: nowrap;
+        padding: 20px 0 0;
+    }
+}
+
+.history__item-desc {
+    padding: 30px;
+    background: #FFFFFF;
+    border: 1px solid #E3E7EB;
+    @include breakpoint(md) {
+        padding: 40px 40px 50px;
+    }
+}
+
+.history__item-title {
+    @extend .ui-title-19;
+    line-height: 1.47;
+    font-weight: 600;
+    margin: 0 0 20px;
+}
+
+.history__item-text {
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: 400;
+    margin: 0;
+}
